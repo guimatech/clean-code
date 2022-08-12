@@ -1,8 +1,8 @@
-package io.github.guimatech.problem;
+package io.github.guimatech.problema;
 
 import java.util.Scanner;
 
-public class Main {
+public class Lixoso {
 
     private static final Scanner sc = new Scanner(System.in);
 
@@ -29,8 +29,7 @@ public class Main {
             System.out.println("Informe a Senha:");
             u.senha = sc.next();
             System.out.println("Informe a Senha novamente:");
-            String senhaRepetida = sc.next();
-            msg = cadastroLixoso(u.nome, u.email, u.senha, senhaRepetida);
+            msg = cadastroLixoso(u.nome, u.email, u.senha, sc.next());
         } while (!msg.isBlank());
     }
 
