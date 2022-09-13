@@ -1,9 +1,12 @@
 package io.github.guimatech.solucao.lixoso.dto;
 
+import lombok.Data;
+
+@Data
 public class UsuarioDTO {
 
-    public String nome;
-    public String email;
-    public String senha;
-    public String senhaRepetida;
+    private String nome;
+    private String email;
+    private String senha;
+    private String senhaRepetida;
 }
